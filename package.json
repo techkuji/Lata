@@ -1,0 +1,53 @@
+{
+  "name": "lata",
+  "displayName": "Lata",
+  "version": "0.1.0",
+  "icon": "media/lata_logo.png",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": "./dist/extension.js",
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "lata.showStatusMenu",
+        "title": "Lata: Show Status Menu"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "lata-sidebar",
+          "title": "Lata Language",
+          "icon": "media/lata_logo.svg"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "copyfiles -u 1 src/context/ast/*.py dist/ && tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.90.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^8.57.0"
+  }
+}

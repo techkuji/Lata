@@ -43,6 +43,8 @@ npm install
 npm run compile
 ````
 
+Open the project in VS Code.
+
 ### Step 2 - Configuration (settings.json)
 Press `Ctrl + Shift + P` (Windows/Linux) or `Cmd + Shift + P` (Mac), search for `preference` and select `Preferences: Open User Settings (JSON)`
 Add below fields in your VS Code `settings.json`:
@@ -76,7 +78,8 @@ Add below fields in your VS Code `settings.json`:
 "lata.localEndpoint": "http://localhost:11434/api/generate"
 ```
 
-Press **F5** (Start Debugging) to launch the Extension Development Host.
+### Step 3 - Activate the extension
+Open `extension.ts` file and press **F5** (Start Debugging) to launch the *Extension Development Host*.
 A new VS code window will open with Lata activated.
 
 Enjoy 😊
@@ -137,4 +140,5 @@ Licensed under the **MIT License**.
 GitHub: [https://github.com/techkuji](https://github.com/techkuji)
 
 ---
+
 

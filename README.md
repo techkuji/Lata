@@ -1,5 +1,6 @@
 
-# 🔥 Lata
+# <img width="40" height="40" alt="image" src="https://github.com/user-attachments/assets/0455bf32-8b95-4273-b2c2-52496808ad82" /> Lata 
+
 
 **Lata** is a VS Code extension to auto complete our code using **cloud LLMs**, **local models**, or **self-hosted endpoints**.  
 It is built for **Pravary** and **flexibility**.
@@ -136,3 +137,4 @@ Licensed under the **MIT License**.
 GitHub: [https://github.com/techkuji](https://github.com/techkuji)
 
 ---
+
